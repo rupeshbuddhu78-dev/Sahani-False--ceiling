@@ -1,422 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Sahani False Ceiling</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Sahani False Ceiling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
 
-    body {
-      background-color: #f8f9fc;
-      color: #1a1a1a;
-      overflow-x: hidden;
-    }
+        body {
+            background-color: #f8f9fc;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
 
-    /* ===== Header / Navbar ===== */
-    header {
-      background: #1a2c49;
-      color: #fff;
-      padding: 0.7rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+        /* ===== Header / Navbar ===== */
+        header {
+            background: #1a2c49;
+            color: #fff;
+            padding: 0.7rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-    .logo {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-    }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-    nav ul li a:hover,
-    nav ul li a.active {
-      color: #ffd700;
-    }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffd700;
+        }
 
-    .hamburger {
-      display: none;
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
 
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #1a2c49;
-        padding: 1rem 0;
-      }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #1a2c49;
+                padding: 1rem 0;
+            }
 
-      nav ul.show {
-        display: flex;
-      }
+            nav ul.show {
+                display: flex;
+            }
 
-      .hamburger {
-        display: block;
-      }
-    }
+            .hamburger {
+                display: block;
+            }
+        }
 
-    /* ===== Hero Section ===== */
-    .contact-hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-        url("https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg") center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 6rem 1rem;
-    }
+        /* ===== Hero Section ===== */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url("https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg") center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
 
-    .contact-hero h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #ffd700;
-    }
+        .contact-hero h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffd700;
+        }
 
-    .contact-hero p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin-inline: auto;
-    }
+        .contact-hero p {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-inline: auto;
+        }
 
-    /* ===== Contact Section ===== */
-    #contact-content {
-      padding: 3rem 1rem;
-      display: flex;
-      justify-content: center;
-    }
+        /* ===== Contact Section ===== */
+        #contact-content {
+            padding: 3rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
 
-    .contact-card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      max-width: 1100px;
-      width: 100%;
-      overflow: hidden;
-    }
+        .contact-card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            width: 100%;
+            overflow: hidden;
+            transition: max-width 0.3s ease-in-out;
+        }
 
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      padding: 3rem;
-    }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 3rem;
+        }
 
-    @media (max-width: 900px) {
-      .contact-container {
-        grid-template-columns: 1fr;
-        padding: 2rem;
-      }
-    }
+        /* ===== Our Details ===== */
+        .contact-info {
+            background: linear-gradient(135deg, #1a2c49, #2f4370);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    /* ===== Our Details ===== */
-    .contact-info {
-      background: linear-gradient(135deg, #1a2c49, #2f4370);
-      color: #fff;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        .contact-info h3 {
+            color: #ffd700;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-    .contact-info h3 {
-      color: #ffd700;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      text-transform: uppercase;
-    }
+        .contact-info p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #e3e3e3;
+        }
 
-    .contact-info p {
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-      color: #e3e3e3;
-    }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
 
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 1.2rem;
-      gap: 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 10px 12px;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
+        .info-item:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px);
+        }
 
-    .info-item:hover {
-      background: rgba(255, 215, 0, 0.2);
-      transform: translateY(-3px);
-    }
+        .info-item i {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-top: 4px;
+        }
 
-    .info-item i {
-      font-size: 1.3rem;
-      color: #ffd700;
-      margin-top: 4px;
-    }
+        .info-item div {
+            flex: 1;
+        }
 
-    .info-item div {
-      flex: 1;
-    }
+        .info-item span {
+            font-weight: 600;
+            color: #fff;
+        }
 
-    .info-item span {
-      font-weight: 600;
-      color: #fff;
-    }
+        .info-item p {
+            color: #fff;
+            margin: 0;
+            font-size: 0.95rem;
+        }
 
-    .info-item a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-      word-break: break-word;
-    }
+        /* ===== Form ===== */
+        .contact-form h3 {
+            color: #1a2c49;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
 
-    .info-item a:hover {
-      color: #fff;
-    }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
 
-    .info-item p {
-      color: #fff;
-      margin: 0;
-      font-size: 0.95rem;
-    }
+        label {
+            font-weight: 500;
+            color: #333;
+        }
 
-    @media (max-width: 900px) {
-      .info-item {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-      }
-      .info-item div {
-        flex: 1;
-      }
-      .contact-info p {
-        text-align: center;
-      }
-    }
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
 
-    /* ===== Form ===== */
-    .contact-form h3 {
-      color: #1a2c49;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
+        input:focus,
+        textarea:focus {
+            border-color: #1a2c49;
+            outline: none;
+        }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
+        .submit-button {
+            background: #1a2c49;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-    label {
-      font-weight: 500;
-      color: #333;
-    }
+        /* === YAHAN ERROR THA - AB FIX HO GAYA HAI === */
+        .submit-button:hover {
+            background: #ffd700;
+            color: #1a2c49; /* <--- Yeh code theek kar diya hai */
+        }
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      transition: 0.3s;
-      font-size: 0.95rem;
-    }
+        footer {
+            background: #1a2c49;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
 
-    input:focus,
-    textarea:focus {
-      border-color: #1a2c49;
-      outline: none;
-    }
+        /* ===== WhatsApp Button ===== */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+            z-index: 200;
+        }
 
-    .submit-button {
-      background: #1a2c49;
-      color: #fff;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+        }
 
-    .submit-button:hover {
-      background: #ffd700;
-      color: #1a2c49;
-    }
+        svg {
+            width: 28px;
+            height: 28px;
+        }
 
-    footer {
-      background: #1a2c49;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 3rem;
-    }
+        /* ===== Responsive Mobile Adjustments (FINAL FIX) ===== */
+        @media (max-width: 900px) {
 
-    /* ===== WhatsApp Button ===== */
-    .whatsapp-fab {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      border-radius: 50%;
-      width: 55px;
-      height: 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: 0.3s;
-      z-index: 200;
-    }
+            /* 1. सफेद कार्ड को 500px का बनाया */
+            .contact-card {
+                max-width: 500px;
+                border-radius: 15px; /* नीले बॉक्स से मैच करने के लिए */
+            }
 
-    .whatsapp-fab:hover {
-      transform: scale(1.1);
-    }
+            /* 2. कंटेनर को स्टैक किया और फालतू पैडिंग हटाई */
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                padding: 0; /* <<<===== YEH HAI ASLI FIX */
+                gap: 0; /* कोई गैप नहीं */
+            }
+            
+            /* 3. नीले बॉक्स के निचले कोनों को सीधा किया */
+            .contact-info {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                box-shadow: none; /* अंदरूनी शैडो हटा दिया */
+            }
 
-    svg {
-      width: 28px;
-      height: 28px;
-    }
-  </style>
+            /* 4. फॉर्म में पैडिंग डाली ताकि वो अच्छा दिखे */
+            .contact-form {
+                padding: 2rem;
+            }
+
+            /* 5. दोनों बॉक्स की चौड़ाई 100% की */
+            .contact-info,
+            .contact-form {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">Sahani False Ceiling</div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="contact-hero">
-      <h2>Get in Touch With Us</h2>
-      <p>We are always ready to answer your questions and provide a free consultation.</p>
-    </section>
-
-    <section id="contact-content">
-      <div class="contact-card">
-        <div class="contact-container">
-          <!-- ===== Our Details ===== -->
-          <div class="contact-info">
-            <h3>Our Details</h3>
-            <p>Feel free to reach out to us via phone, email, or WhatsApp during business hours.</p>
-
-            <div class="info-item">
-              <i class="fas fa-phone-alt"></i>
-              <div>
-                <span>Phone (Click to Call):</span><br />
-                <a href="tel:+917636008047">+91 76360 08047</a>
-              </div>
+    <header>
+        <nav>
+            <div class="logo">Sahanines Decoration</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="info-item">
-              <i class="fab fa-whatsapp"></i>
-              <div>
-                <span>WhatsApp:</span><br />
-                <a href="https://wa.me/917636008047?text=Hello!%20I%20want%20to%20know%20about%20your%20False%20Ceiling%20services.">Chat on WhatsApp</a>
-              </div>
+    <main>
+        <section class="contact-hero">
+            <h2>Get in Touch With Us</h2>
+            <p>We are always ready to answer your questions and provide a free consultation.</p>
+        </section>
+
+        <section id="contact-content">
+            <div class="contact-card">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Our Details</h3>
+                        <p>Feel free to reach out to us via phone, email, or WhatsApp during business hours.</p>
+
+                        <a href="tel:+917636008047" class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span>Phone (Click to Call):</span><br />
+                                +91 76360 08047
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/917636008047?text=Hello! I want to know about your False Ceiling services."
+                            target="_blank" class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span>WhatsApp:</span><br />
+                                Chat on WhatsApp
+                            </div>
+                        </a>
+
+                        <a href="https://www.google.com/maps/place/Guwahati,+Assam,+India" target="_blank"
+                            class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Address:</span><br />
+                                Guwahati, Assam, India
+                            </div>
+                        </a>
+
+                        <a href="mailto:sahanines01@gmail.com" class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email:</span><br />
+                                sahanines01@gmail.com
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email (Optional):</label>
+                                <input type="email" id="email" name="email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">How can we help you?</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="I'm interested in a new false ceiling for my living room..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <span>Address:</span><br />
-                Guwahati, Assam, India
-              </div>
-            </div>
+    <footer>
+        <p>© 2025 Sahani False Ceiling. All rights reserved.</p>
+    </footer>
 
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <span>Email:</span><br />
-                <a href="mailto:sahanines01@gmail.com">sahanines01@gmail.com</a>
-              </div>
-            </div>
-          </div>
+    <a href="https://wa.me/917636008047?text=Hello!%20I%20want%20to%20know%20about%20your%20False%20Ceiling%20services."
+        class="whatsapp-fab" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 28px; color: white;"></i>
+    </a>
 
-          <!-- ===== Contact Form ===== -->
-          <div class="contact-form">
-            <h3>Send Us a Message</h3>
-            <form>
-              <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Your Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Your Email (Optional):</label>
-                <input type="email" id="email" name="email" />
-              </div>
-              <div class="form-group">
-                <label for="message">How can we help you?</label>
-                <textarea id="message" name="message" rows="5" placeholder="I'm interested in a new false ceiling for my living room..." required></textarea>
-              </div>
-              <button type="submit" class="submit-button">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Sahani False Ceiling. All rights reserved.</p>
-  </footer>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/917636008047?text=Hello!%20I%20want%20to%20know%20about%20your%20False%20Ceiling%20services." class="whatsapp-fab" target="_blank">
-    <i class="fab fa-whatsapp" style="font-size: 28px; color: white;"></i>
-  </a>
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
-  </script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
 </body>
+
 </html>
