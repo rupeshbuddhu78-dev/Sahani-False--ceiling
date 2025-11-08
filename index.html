@@ -26,7 +26,7 @@
       scroll-behavior: smooth;
     }
 
-    /* ✅ NAVBAR */
+    /* NAVBAR */
     header {
       background: var(--primary-blue);
       color: white;
@@ -81,10 +81,10 @@
       cursor: pointer;
     }
 
-    /* ✅ HERO SECTION */
+    /* HERO SECTION */
     .hero {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-        url("https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg") center/cover no-repeat;
+        url("https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/kids-bedroom-1657181307-GgzD1/b6-1657881594-WHc2n.png") center/cover no-repeat;
       color: white;
       min-height: 85vh;
       display: flex;
@@ -121,7 +121,7 @@
       color: var(--secondary-gold);
     }
 
-    /* ✅ OUR SERVICES */
+    /* OUR SERVICES */
     #services {
       padding: 4rem 1rem;
       background: linear-gradient(135deg, #e9efff, #ffffff);
@@ -149,6 +149,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       transition: all 0.3s;
       border-top: 4px solid var(--secondary-gold);
+      text-align: center;
     }
 
     .service-box:hover {
@@ -177,7 +178,7 @@
       line-height: 1.5;
     }
 
-    /* ✅ GALLERY SECTION */
+    /* GALLERY */
     #gallery {
       background: #f4f7f6;
       text-align: center;
@@ -213,30 +214,32 @@
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       max-width: 1100px;
       margin: auto;
     }
 
     .gallery-item {
-      opacity: 1;
-      transition: opacity 0.5s ease;
+      overflow: hidden;
+      border-radius: 10px;
+      position: relative;
+      aspect-ratio: 4 / 3; /* सभी फोटो का समान आकार */
     }
 
     .gallery-item img {
       width: 100%;
-      height: 250px;
-      border-radius: 10px;
-      object-fit: cover;
+      height: 100%;
+      object-fit: cover; /* फोटो पूरी जगह में फिट हो जाए */
       transition: transform 0.4s;
+      display: block;
     }
 
     .gallery-item img:hover {
       transform: scale(1.05);
     }
 
-    /* ✅ FOOTER */
+    /* FOOTER */
     footer {
       background: var(--primary-blue);
       color: rgba(255, 255, 255, 0.8);
@@ -244,7 +247,7 @@
       padding: 1.5rem;
     }
 
-    /* ✅ WHATSAPP BUTTON */
+    /* WHATSAPP BUTTON */
     .whatsapp-fab {
       position: fixed;
       bottom: 25px;
@@ -267,7 +270,7 @@
       transform: scale(1.1);
     }
 
-    /* ✅ RESPONSIVE NAV */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       ul {
         display: none;
@@ -295,13 +298,21 @@
       .hero h1 {
         font-size: 2.2rem;
       }
+
+      .gallery-item {
+        aspect-ratio: auto; /* छोटे स्क्रीन पर flexible height */
+      }
+
+      .gallery-item img {
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">Sahani False Ceiling</div>
+      <div class="logo">Sahanines Decoration</div>
       <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
       <ul id="nav-menu">
         <li><a href="#home" class="active">Home</a></li>
@@ -354,12 +365,22 @@
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item" data-category="living"><img src="https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg" alt=""></div>
-      <div class="gallery-item" data-category="living"><img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg" alt=""></div>
-      <div class="gallery-item" data-category="bedroom"><img src="https://images.pexels.com/photos/7061400/pexels-photo-7061400.jpeg" alt=""></div>
-      <div class="gallery-item" data-category="bedroom"><img src="https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg" alt=""></div>
-      <div class="gallery-item" data-category="office"><img src="https://images.pexels.com/photos/3182766/pexels-photo-3182766.jpeg" alt=""></div>
-      <div class="gallery-item" data-category="office"><img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="living2.jpg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="living1.jpg" alt="living room"></div>
+      <div class="gallery-item" data-category="living"><img src="living3.jpg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="living4.jpg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="lving5.jpg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="living6.jpg" alt=""></div>
+      <div class="gallery-item" data-category="living"><img src="https://www.laber.in/wp-content/uploads/classified-listing/2024/09/POP-Design-False-ceiling-Contractors-in-Pune-Maharashtra-S.P1-709x530.jpg" alt=""></div>
+      <div class="gallery-item" data-category="bedroom"><img src="bed1.jpg" alt=""></div>
+      <div class="gallery-item" data-category="bedroom"><img src="bed2.jpg" alt=""></div>
+      <div class="gallery-item" data-category="bedroom"><img src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/1-2025-1736068988-NDPD1/amj-1743406946-9EQzZ/false-ceiling-1744184008-oV2JS/fc-2-1744184020-JkUVX.jpg" alt=""></div>
+      <div class="gallery-item" data-category="bedroom"><img src="https://img.interiorcompany.com/interior/webproduct/848638709055075607936.png?aio=w-768;" alt=""></div>
+      <div class="gallery-item" data-category="bedroom"><img src="https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/kids-bedroom-1657181307-GgzD1/b6-1657881594-WHc2n.png" alt=""></div>
+      <div class="gallery-item" data-category="office"><img src="https://thumbs.dreamstime.com/b/reception-counter-19260916.jpg" alt=""></div>
+      <div class="gallery-item" data-category="office"><img src="https://image.made-in-china.com/202f0j00OEGblmkJyMpd/Slim-Home-Office-Ceiling-Light-Panel-Recessed-Suspending-Square-Flat-250-1000mm-300-1200-Commercial-Ultra-Thin-Dimmable-Office-LED-Panel-Light.webp" alt=""></div>
+      <div class="gallery-item" data-category="office"><img src="https://thumbs.dreamstime.com/b/modern-ceiling-lights-wood-accents-open-office-space-great-creative-professional-projects-401860583.jpg" alt=""></div>
+      <div class="gallery-item" data-category="office"><img src="https://ledvista.ie/wp-content/uploads/2025/05/products-6-collingwood-solis-30w-led-panel-600x600mm-p2a22s30w-1.jpg" alt=""></div>
     </div>
   </section>
 
@@ -372,12 +393,12 @@
   </a>
 
   <script>
-    // ✅ Navbar Toggle
+    // Navbar Toggle
     const toggleBtn = document.getElementById("nav-toggle");
     const navMenu = document.getElementById("nav-menu");
     toggleBtn.addEventListener("click", () => navMenu.classList.toggle("show"));
 
-    // ✅ Gallery Filter (Smooth Transition)
+    // Gallery Filter
     const filterButtons = document.querySelectorAll(".filter-btn");
     const galleryItems = document.querySelectorAll(".gallery-item");
 
