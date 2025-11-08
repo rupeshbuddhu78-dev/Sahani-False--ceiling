@@ -185,6 +185,10 @@
       margin-top: 4px;
     }
 
+    .info-item div {
+      flex: 1;
+    }
+
     .info-item span {
       font-weight: 600;
       color: #fff;
@@ -195,10 +199,31 @@
       text-decoration: none;
       font-weight: 500;
       transition: 0.3s;
+      word-break: break-word;
     }
 
     .info-item a:hover {
       color: #fff;
+    }
+
+    .info-item p {
+      color: #fff;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .info-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .info-item div {
+        flex: 1;
+      }
+      .contact-info p {
+        text-align: center;
+      }
     }
 
     /* ===== Form ===== */
@@ -335,16 +360,16 @@
             <div class="info-item">
               <i class="fas fa-map-marker-alt"></i>
               <div>
-                <span>Address:</span>
-                <p>Guwahati, Assam, India</p>
+                <span>Address:</span><br />
+                Guwahati, Assam, India
               </div>
             </div>
 
             <div class="info-item">
               <i class="fas fa-envelope"></i>
               <div>
-                <span>Email:</span>
-              <p><a href="mailto:sahanines01@gmail.com">sahanines01@gmail.com</a></p>
+                <span>Email:</span><br />
+                <a href="mailto:sahanines01@gmail.com">sahanines01@gmail.com</a>
               </div>
             </div>
           </div>
@@ -395,5 +420,3 @@
   </script>
 </body>
 </html>
-
-
