@@ -64,6 +64,7 @@
       color: white;
       font-weight: 600;
       transition: 0.3s;
+      text-decoration: none; /* underline हटाने के लिए */
     }
 
     ul li a:hover,
@@ -150,6 +151,9 @@
       transition: all 0.3s;
       border-top: 4px solid var(--secondary-gold);
       text-align: center;
+      display: block;
+      text-decoration: none !important; /* underline हटाने के लिए */
+      color: inherit; /* text color inherit रहे */
     }
 
     .service-box:hover {
@@ -170,6 +174,7 @@
       color: var(--primary-blue);
       margin-bottom: 0.8rem;
       font-size: 1.4rem;
+      text-decoration: none !important; /* underline हटाया */
     }
 
     .service-box p {
@@ -224,13 +229,13 @@
       overflow: hidden;
       border-radius: 10px;
       position: relative;
-      aspect-ratio: 4 / 3; /* सभी फोटो का समान आकार */
+      aspect-ratio: 4 / 3;
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* फोटो पूरी जगह में फिट हो जाए */
+      object-fit: cover;
       transition: transform 0.4s;
       display: block;
     }
@@ -300,7 +305,7 @@
       }
 
       .gallery-item {
-        aspect-ratio: auto; /* छोटे स्क्रीन पर flexible height */
+        aspect-ratio: auto;
       }
 
       .gallery-item img {
@@ -337,16 +342,19 @@
         <h3>Gypsum Ceiling</h3>
         <p>Elegant and smooth finishes for homes and offices.</p>
       </div>
-      <div class="service-box">
+      
+      <a href="GLOBE NEW PVC PANELS.pdf" target="_blank" class="service-box">
         <i class="fas fa-water"></i>
         <h3>PVC Ceiling</h3>
         <p>Waterproof and easy to maintain ceilings for kitchens and bathrooms.</p>
-      </div>
+      </a>
+      
       <div class="service-box">
         <i class="fas fa-lightbulb"></i>
         <h3>LED Integration</h3>
         <p>Enhance your ambience with modern lighting designs.</p>
       </div>
+      
       <div class="service-box">
         <i class="fas fa-paint-roller"></i>
         <h3>POP Finishing</h3>
@@ -427,4 +435,3 @@
   </script>
 </body>
 </html>
-
